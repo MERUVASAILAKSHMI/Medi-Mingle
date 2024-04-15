@@ -1,0 +1,157 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>About</title> 
+ <style> 
+ body { 
+ font-family: Arial, Helvetica, sans-serif; 
+ margin: 0; 
+ background:linear-gradient(to right,lightgreen,white); 
+} 
+html { 
+ box-sizing: border-box; 
+} 
+*, *:before, *:after { 
+ box-sizing: inherit; 
+} 
+.column { 
+ float: left; 
+ width: 33.3%; 
+ margin-bottom: 16px; 
+ padding: 0 8px; 
+} 
+.card { 
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+ margin: 8px; 
+} 
+.about-section { 
+ padding: 30px; 
+ text-align: center; 
+ color: black; 
+} 
+.container { 
+ padding: 0 16px; 
+} 
+.container::after, .row::after { 
+ content: ""; 
+ clear: both; 
+ display: table; 
+} 
+.title { 
+ color: grey; 
+} 
+.button { 
+ border: none; 
+ outline: 0; 
+ display: inline-block; 
+ padding: 8px; 
+ color: white; 
+ background-color: #000; 
+ text-align: center; 
+ cursor: pointer; 
+ width: 100%; 
+} 
+.row{ 
+ display: flex; 
+} 
+.button:hover { 
+ background-color: #555; 
+} 
+@media screen and (max-width: 650px) { 
+ .column { 
+ width: 100%; 
+ display: block; 
+ } 
+} 
+#about{ 
+ display: flex; 
+} 
+.sub{ 
+ color: rgb(0, 112, 186); 
+} 
+.sub1{ 
+ color:crimson;
+}
+#about1{
+    color:goldenrod;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ h2{
+    color:orange;
+ }
+ </style> 
+</head> 
+<body> 
+ <div class="about-section"> 
+ 
+ <div id="about"> 
+ <div class="landimage"> 
+ <img src="images\h2.jpg" alt="" width="450px" height="450px"> 
+ </div> 
+ <div class="landing"> 
+ <h1 id="about1">About Us</h1> 
+ <br> 
+ <br> 
+ <br> 
+ <h1 class="sub text-success">The Online Health Community!</h1> 
+ <p>we understand the unique challenges and opportunities that the
+            healthcare industry presents. In an increasingly digital world,
+            where patients and clients turn to the internet to find medical
+            services and information, having a robust online presence is
+            critical. Our Healthcare SEO services are tailored to meet the
+            specific needs of hospitals, clinics, pharmaceutical
+            companies, and more.</p> 
+ </div> 
+ </div> 
+ <h2 style="text-align:center" class="sub1">Our Team</h2> 
+ <div class="row"> 
+ <div class="column"> 
+ <div class="card"> 
+ 
+ <div class="container"> 
+ <h2>Dr. Candice Karen Miranda</h2> 
+ <p class="title">MBBS, MD - Dermatology</p> 
+ <a href="contact.html" target="_blank"><button 
+class="button">Contact</button></a> 
+
+ </div> 
+ </div> 
+ </div> 
+ 
+ <div class="column"> 
+ <div class="card"> 
+ 
+ <div class="container"> 
+ <h2>Dr. Sumanth Shetty</h2> 
+ <p class="title">BDS, MDS - Paedodontics And Preventive Dentistry Dentist</p> 
+ <a href="contact.html"><button class="button">Contact</button></a> 
+ </div> 
+ </div> 
+ </div> 
+ 
+ <div class="column"> 
+ <div class="card"> 
+
+ <div class="container"> 
+ <h2>Dr. K.Sulekha</h2> 
+ <p class="title">AYUSHHomoeopath</p> 
+ <a href="contact.html"><button class="button">Contact</button></a> 
+ </div> 
+ </div> 
+ </div> 
+ <div class="column"> 
+ <div class="card"> 
+ 
+ <div class="container"> 
+ <h2>
+Dr. Shree Lakshmi.</h2> 
+ <p class="title">AYUSHAyurveda</p> 
+ <a href="contact.html"><button class="button">Contact</button></a> 
+ </div> 
+ </div> 
+ </div> 
+ 
+</body>
+</html>

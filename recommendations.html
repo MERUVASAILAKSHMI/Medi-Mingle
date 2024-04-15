@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Community Food Recommendations</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(to right, lightgreen, whitesmoke);
+      }
+
+      header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 0 20px;
+      }
+
+      .recommendation {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      .recommendation h2 {
+        margin-top: 0;
+      }
+
+      .recommendation p {
+        margin-bottom: 10px;
+      }
+
+      .recommendation img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 4px;
+      }
+
+      .tag {
+        display: inline-block;
+        background-color: #f0f0f0;
+        color: #333;
+        font-size: 14px;
+        padding: 4px 8px;
+        margin-right: 8px;
+        border-radius: 4px;
+      }
+
+      .health-form {
+        margin-top: 40px;
+        margin-bottom: 30px;
+      }
+
+      .health-form label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      .health-form input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+
+      .health-form button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+      a {
+        text-decoration: none;
+        color: white;
+      }
+      .button {
+        background-color: orange;
+        padding: 8px;
+        border-radius: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Community Health Recommendations</h1>
+    </header>
+
+    <div class="container">
+      <div class="health-form">
+        <h2>Find Doctor According to Your Health Issue</h2>
+        <form id="healthForm" action="#">
+          <label for="health_condition">Enter your health condition:</label>
+          <input
+            type="text"
+            id="health_condition"
+            name="health_condition"
+            placeholder="e.g., Diabetes, neurologist, etc."
+            required
+          />
+          <button type="submit">Find Doctor</button>
+        </form>
+      </div>
+      <div class="recommendation">
+        <h2>Dr. Candice Karen Miranda</h2>
+        <p>
+          CONSULTANT DERMATOLOGIST - MBBS, MD. MBBS - Father Muller Medical
+          College, Mangalore MD - AJ Shetty Institute of Medical Science,
+          Mangalore
+        </p>
+        <img src="images/docr1.jpg" alt="Dermatology" />
+        <span class="tag">Specialist</span>
+        <a href="appointment.html" class="button">Book Appointment</a>
+      </div>
+
+      <div class="recommendation">
+        <h2>Dr. Sumanth Shetty</h2>
+        <p>BDS, MDS - Paedodontics And Preventive Dentistry Dentist</p>
+        <img src="images/docr2.jpg" alt="Dentistry Dentist" />
+        <span class="tag">Specialist</span>
+        <a href="appointment.html" class="button">Book Appointment</a>
+      </div>
+
+      <div class="recommendation">
+        <h2>Dr. K.Sulekha</h2>
+        <p>
+          Dr. K.Sulekha has 30 years of sound experience in homeopathy medicine
+          with excellent results.
+        </p>
+        <img src="images/docr4.jpg" alt="homeopathy" />
+        <span class="tag">Specialist</span>
+        <a href="appointment.html" class="button">Book Appointment</a>
+      </div>
+      <div class="recommendation">
+        <h2>Dr. Shree Lakshmi.</h2>
+        <p>
+          Dr Srilakshmi N, is an Ayurvedic consultant with over 21years of
+          experience in the field of Ayurveda. She is a graduate from government
+          Ayurvedic Medical College Bangalore.
+        </p>
+        <img src="images/docr3.jpg" alt="DERMATOLOGIST" />
+        <span class="tag">Specialist</span>
+        <a href="appointment.html" class="button">Book Appointment</a>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("healthForm")
+        .addEventListener("submit", function (event) {
+          event.preventDefault();
+          var healthCondition = document
+            .getElementById("health_condition")
+            .value.toLowerCase();
+          if (healthCondition === "diabetes") {
+            window.location.href = "diabetics.html";
+          } else if (healthCondition === "neurologist") {
+            window.location.href = "neurologist.html";
+          } else {
+            alert(
+              "Sorry, we currently do not have specific recommendations for this health condition."
+            );
+          }
+        });
+    </script>
+  </body>
+</html>

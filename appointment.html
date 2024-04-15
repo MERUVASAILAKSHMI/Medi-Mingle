@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+ <style>
+ #contact{
+ width:100%;
+ height:auto;
+ 
+ }
+ body{
+ background-image: url("images/bgs2.jpg");
+display:-ms-flexbox;
+ }
+ h1{
+ text-align: center;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+ color: rgb(177, 209, 16);
+ }
+ form{
+ position: absolute;
+ top:15%;
+ left:30%;
+ font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+ }
+ form input{
+
+width: auto;
+ height:30px;
+ color:white;
+ font-size:30px;
+ margin-top:20px;
+ border-radius: 20px;
+ border:none;
+ background-color: cadetblue;
+
+ }
+
+
+ label{
+ font-size: 24px;
+ color:wheat;
+
+ }
+ textarea{
+ margin-left:160px;
+ }
+ .msg{
+ position:absolute;
+ bottom:45%;
+ }
+ #butn{
+ width:200px;
+ font-size:20px;
+ color:black;
+ background-color: palevioletred;
+ margin-left: 30%;
+ border-radius: 20px;
+ }
+ #message{
+  width:800px;
+  height:150px;
+  margin-top: 10px;
+  display:flex;
+  flex:wrap;
+ }
+ #message label{
+  margin-top: 30px;
+ }
+ #message textarea{
+  width:400px;
+  height:100px;
+  margin-left:0px;
+  border-radius:10px;
+  background-color: cadetblue;
+ }
+#butn {
+  width: 200px;
+  height: 50px; 
+  font-size: 20px;
+  color: white;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  margin: auto;
+  margin-top: 20px;
+}
+
+
+#butn:hover {
+  background-color: #630c0c; /* Darken the background color on hover */
+}
+ </style>
+</head>
+<body>
+ <div id="appoint">
+ <h1>Get Appointment</h1>
+<br>
+<br>
+<br>
+ <form action="https://formspree.io/f/xkndreea" method="post">
+ <label for=""> Full Name: </label>
+ <input type="text">
+
+ 
+ <br>
+ <label for="">Email Id:</label>
+ <input type="email">
+ <br>
+ <label for=""> Doctor Name: </label>
+ <input type="text">
+
+ <div  >
+ <label for=""> Date: </label>
+              <input
+                type="date"
+                name="date"
+                id="date"
+              
+              />
+ 
+
+ <label for=""> Time: </label>
+ <input
+   type="time"
+   name="time"
+   id="time"
+   
+ />
+ </div>
+
+ <br>
+
+  <label for=""> State: </label>
+              <input
+                type="text" />
+ 
+<br>
+ <label for="">City: </label>
+ <input
+   type="text"/>
+
+ <br>
+ <label for="">Post Code: </label>
+ <input
+   type="text"/>
+   <br>
+   <div id="message">
+    <label for="">Message:</label>
+    <textarea name="msg" id=""></textarea>
+   </div>
+  
+ 
+ <div id="button">
+ <input id="butn" type="submit" value="submit" text-align="center"> 
+ 
+</div>
+
+ </form>
+
+ </table>
+ </div>
+ <script>
+ /* document.getElementById('appoint').addEventListener("submit", function (event) {
+          event.preventDefault();
+          var app = document
+            .getElementById("app")
+            .value.toLowerCase();
+          if (app === "") {
+            alert(
+              "Please fill the form, don't keep empty."
+            );
+          }
+       });*/
+ </script>
+</body>
+</html> 
