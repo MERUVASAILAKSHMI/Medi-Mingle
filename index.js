@@ -96,8 +96,8 @@ app.get("/appointment", (req, res) => {
   res.sendFile(__dirname + "/appointment.html");
 });
 
-app.get("/gluten", (req, res) => {
-  res.sendFile(__dirname + "/gluten.html");
+app.get("/neurologist", (req, res) => {
+  res.sendFile(__dirname + "/neurologist.html");
 });
 app.listen(port, () =>
   console.log(`Server is running in http://localhost:${port}`)
